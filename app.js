@@ -100,11 +100,7 @@ app.use((req, res) => {
 });
 
 // MongoDB Connection
-mongoose
-  .connect(process.env.MONGO_URL || "mongodb://localhost:27017/realestate", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+mongoose.connect(process.env.MONGO_URL || "mongodb://localhost:27017/realestate")
   .then(() => {
     console.log("✅ MongoDB Connected");
     app.listen(5000, () => console.log("🚀 Server running at http://localhost:5000"));
