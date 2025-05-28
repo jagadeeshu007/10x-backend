@@ -4,7 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const multer = require("multer");
 const authRoutes = require("./routes/authRoutes");
-const propertyRoutes = require("./routes/propertyRoutes");
+const propertyRoutes = require("./routes/PropertyRoutes");
 const Property = require("./models/Property");
 const fs = require("fs");
 
